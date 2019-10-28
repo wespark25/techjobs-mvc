@@ -12,12 +12,15 @@ import java.util.HashMap;
 /**
  * Created by LaunchCode
  */
+
+//List Page
 @Controller
 @RequestMapping(value = "list")
 public class ListController {
 
     static HashMap<String, String> columnChoices = new HashMap<>();
 
+//    Creating a list of ways to organize jobs
     public ListController () {
         columnChoices.put("core competency", "Skill");
         columnChoices.put("employer", "Employer");

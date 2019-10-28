@@ -15,6 +15,10 @@ import java.util.List;
 /**
  * Created by LaunchCode
  */
+
+// This model actually crafting an arraylist of the jobs when it is called.
+
+
 public class JobData {
 
     private static final String DATA_FILE = "job_data.csv";
@@ -29,6 +33,8 @@ public class JobData {
      * @param field The column to retrieve values from
      * @return List of all of the values of the given field
      */
+
+//    This method will return a string that somewhere matches the arguement given to it
     public static ArrayList<String> findAll(String field) {
 
         // load data, if not already loaded
@@ -50,6 +56,7 @@ public class JobData {
         return values;
     }
 
+//    This will just return a arraylist of all the jobs
     public static ArrayList<HashMap<String, String>> findAll() {
 
         // load data, if not already loaded
@@ -122,6 +129,9 @@ public class JobData {
     /**
      * Read in data from a CSV file and store it in a list
      */
+
+//    This method is called by a number of other methods in this class and is the method that is actually loading the
+//    data in from the DATA_FILE
     private static void loadData() {
 
         // Only load data once
